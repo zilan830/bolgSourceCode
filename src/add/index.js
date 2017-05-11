@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import './style.styl';
-import {addTodo , setNextTotal} from 'rdx/actions/index';
-import {connect} from 'react-redux';
-import ShowSpan from './show';
+import React, { Component } from "react";
+import "./style.styl";
+import { addTodo, setNextTotal } from "rdx/actions/index";
+import { connect } from "react-redux";
+import ShowSpan from "./show";
 
 // export default class Add extends Component {
 //   constructor(props) {
@@ -22,7 +22,7 @@ import ShowSpan from './show';
 //   }
 // }
 
-let Add = ({dispatch}) => {
+let Add = ({ dispatch }) => {
   return (
     <div className="add-con">
       <div className="show">
@@ -32,17 +32,19 @@ let Add = ({dispatch}) => {
         </ShowSpan>
       </div>
       <div className="btn">
-        <button onClick={e => {
-          console.log("hhhh");
-          dispatch(addTodo("加一"));
-          dispatch(setNextTotal());
-        }}>按钮
+        <button
+          onClick={e => {
+            console.log("hhhh");
+            dispatch(addTodo("加一"));
+            dispatch(setNextTotal());
+          }}
+        >
+          按钮
         </button>
       </div>
     </div>
-  )
+  );
 };
-
 
 Add = connect()(Add);
 

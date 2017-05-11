@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class ModuleDis extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
-  render(){
+  render() {
     return (
       <div>
         导出模块
       </div>
-    )
+    );
   }
 }
 

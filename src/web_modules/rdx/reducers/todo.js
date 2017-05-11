@@ -1,13 +1,13 @@
 const todo = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
-      console.log(state,"state");
+    case "ADD_TODO":
+      console.log(state, "state");
       return {
         id: action.id,
-        text: action.text,
+        text: action.text
       };
     default:
-      return state
+      return state;
   }
 };
 

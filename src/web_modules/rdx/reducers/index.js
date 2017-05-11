@@ -1,6 +1,6 @@
-import {combineReducers} from 'redux';
-import todo from './todo';
-import nextNav from './nextNav';
+import { combineReducers } from "redux";
+import todo from "./todo";
+import nextNav from "./nextNav";
 
 const todoApp = combineReducers({
   todo,

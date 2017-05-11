@@ -1,12 +1,12 @@
 const nextTotal = (state = [], action) => {
   switch (action.type) {
-    case 'NEXT_NAV':
+    case "NEXT_NAV":
       console.log("state", state);
       return {
-        total: action.total,
+        total: action.total
       };
     default:
-      return state
+      return state;
   }
 };
 

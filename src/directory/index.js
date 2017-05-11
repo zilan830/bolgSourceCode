@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import Nav from '../nav/index';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import Nav from "../nav/index";
 
 export default class Directory extends Component {
   constructor(props) {
@@ -10,9 +10,8 @@ export default class Directory extends Component {
   render() {
     return (
       <div>
-        <Nav/>
+        <Nav />
       </div>
-    )
+    );
   }
 }
-

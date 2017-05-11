@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class Programming extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
-  render(){
+  render() {
     return (
       <div>
         技术页面
         {this.props.children}
       </div>
-    )
+    );
   }
 }
 
